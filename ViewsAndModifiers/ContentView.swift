@@ -8,17 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
-  var motto1: some View { Text("Draco dormiens") }
-  var motto2: some View { Text("nunquam titillandus") }
-  
   var body: some View {
     VStack {
-      motto1
-        .foregroundColor(.red)
-      motto2
-        .foregroundColor(.blue)
+      Text("First")
+          .font(.largeTitle)
+          .padding()
+          .foregroundColor(.white)
+          .background(Color.blue)
+          .clipShape(Capsule())
+
+      Text("Second")
+          .font(.largeTitle)
+          .padding()
+          .foregroundColor(.white)
+          .background(Color.blue)
+          .clipShape(Capsule())
     }
-    .font(.title)
   }
 }
 
