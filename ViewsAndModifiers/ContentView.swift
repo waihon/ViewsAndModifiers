@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-  let motto1 = Text("Draco dormiens")
-  let motto2 = Text("nunquam titillandus")
+  var motto1: some View { Text("Draco dormiens") }
+  var motto2: some View { Text("nunquam titillandus") }
   
   var body: some View {
     VStack {
